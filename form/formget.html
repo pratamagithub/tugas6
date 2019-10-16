@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=UTF-8" />
+    <title>Belajar Form PHP</title>
+</head>
+<body>
+    <h2>Tutorial Belajar Form HTML - PHP </h2>
+    <!-- Pada tag form terdapat 2 atribut yaitu :
+    1. action : file yang dituju ketika tombol submit ditekan.
+    2. method : jenis method yang digunakan untuk mengirimkan data pada form. Ada 2 yaitu post dan get, post digunakan untuk mengirimkan data sensitif
+    seperti password ,biodata dll sedangkan get digunakan untuk pencarian, dll. method post ketika mengirim data tidak akan terlihat diurl berbeda
+    dengan method get yang terlihat di url. -->
+    <form action="prosesget.php" method="get"> <!--Emethod GET akan terlihat di url-->
+    <!-- atribut name pada tag input akan menjadi penanda masing-masing objek form agar dapat diproses dengan PHP pada file yang dituju. -->
+    Nama: <input type="text" name="nama" />
+    <br />
+    E-Mail: <input type="text" name="email" />
+    <br />
+    <input type="submit" value="Proses Data" >
+    </form>
+</body>
+</html>
